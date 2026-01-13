@@ -1,0 +1,81 @@
+.header-main {
+  position: relative;
+  width: 100%;
+  height: 100%; /* 30% высоты экрана */
+  min-height: 300px;
+  margin-top: 70px; /* Отступ для фиксированного заголовка */
+  overflow: hidden;
+}
+
+.header-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.header-main::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.site-main-info h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  letter-spacing: 1px;
+}
+
+.site-main-info p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 800px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  margin-bottom: 15px;
+}
+.site-main-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  pointer-events: none;
+}
+
+.site-main-info {
+  height: 40vh;
+  padding: 10px;
+}
+
+.site-main-info h1 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+.site-main-info p {
+  font-size: 0.9rem;
+}
+/* .site-main-info {
+  height: 35vh;
+}
+
+.site-main-info h1 {
+  font-size: 2rem;
+}
+
+.site-main-info p {
+  font-size: 1rem;
+} */
