@@ -5,6 +5,7 @@ import СorporateСooperationPage from "./pages/СorporateСooperationPage";
 import ContactTheManagerPage from "./pages/ContactTheManagerPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NotFound from "./pages/NotFound";
+import ProductPage from "./pages/ProductPage";
 function App() {
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
             path="/СorporateСooperation"
             element={<СorporateСooperationPage />}
           />
+          <Route path="/Product" element={<ProductPage />} />
           <Route
             path="/ContactTheManager"
             element={<ContactTheManagerPage />}

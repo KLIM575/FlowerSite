@@ -1,16 +1,20 @@
 import React from "react";
 import "./style.css";
-
-const ProductCard = () => {
+const ProductCard = (props) => {
   return (
-    <div className="roductCard">
-      <img className="img" src="/src/assets/Byket.jpg" alt="Букет" />
-      <div className="">
-        M<div>Size</div>
+    <a href="/Product" className="product-card">
+      <img className="img" src={props.src} alt="Букет" />
+      <div className="container">
+        <div className="info-product">
+          <p>{props.size} </p>
+          <div>Size</div>
+        </div>
       </div>
-      <span className="price">1 500 ₽</span>
-      <button>купить</button>
-    </div>
+      <div className="price-info">
+        <span className="price">{props.price} ₽ </span>
+        <button>купить</button>
+      </div>
+    </a>
   );
 };
 

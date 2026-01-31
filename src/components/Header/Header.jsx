@@ -5,7 +5,9 @@ const Header = () => {
   return (
     <header className="Header__menu">
       <div className="header-title">
-        <span className="header-title-logo">BYKETNAYA</span>
+        <a href="/" className="header-title-logo">
+          BYKETNAYA
+        </a>
       </div>
       <div className="cart-container">
         <div className="cart-icon">Корзина</div>
